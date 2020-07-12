@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template-Apps for online order</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-lg-12 col-xl-12 col-sm-12 col-md-12">
+      <div class="card mt-3 tab-card">
+        <div class="card-header tab-card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One" aria-selected="true"><span class="span-number">1</span>Review & Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two" aria-selected="false"><span class="span-number">2</span>Select Address</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="Three" aria-selected="false"><span class="span-number">3</span>Check Quote</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="four-tab" data-toggle="tab" href="#four" role="tab" aria-controls="Three" aria-selected="false"><span class="span-number">4</span>Place Order</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
+          	<h5 class="card-title">2 products in cart</h5>
+
+          	<div>
+          		<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      	<div class="row">
+
+          		<div class="card col-md-4 no-shadow" style="">
+			<img class="card-img-top" src="images/Anjeer_Dry_Fruit_Roll_COMPRESSED.jpg" class="img-responsive" alt="Card image">
+			<div class="card-body">
+			
+			<p class="card-text fb">Kaju Gujjaya</p>
+			<div class="form-inline">
+				<input type="button" onclick="buttonClickdec()" class="btn btn-primary btn-address" value="-" id="cartinputdec">
+				<input type="text" value="1" id="cartinput">				
+				<input type="button" onclick="buttonClick()" class="btn btn-primary btn-address" id="incr" value="+">
+			</div>
+
+			</div>
+			</div>
+			<div class="card col-md-4 no-shadow" style="">
+			<img class="card-img-top" src="images/akaash-namkin.jpg" class="img-responsive" alt="Card image">
+			<div class="card-body">
+			
+			<p class="card-text fb">Kaju Apple</p>
+			<div class="form-inline">
+				<input type="button" onclick="buttonClickdec()" class="btn btn-primary btn-address" value="-" id="cartinputdec">
+				<input type="text" value="1" id="cartinput">				
+				<input type="button" onclick="buttonClick()" class="btn btn-primary btn-address" id="incr" value="+">
+			</div>
+			</div>
+			</div>
+			<div class="card col-md-4 no-shadow" style="">
+			<img class="card-img-top" src="images/Dry_Jamoon_COMPRESSED.jpg" class="img-responsive" alt="Card image">
+			<div class="card-body">
+			
+			<p class="card-text fb">Kaju Apple</p>
+			<div class="form-inline">
+				<input type="button" onclick="buttonClickdec()" class="btn btn-primary btn-address" value="-" id="cartinputdec">
+				<input type="text" value="1" id="cartinput">				
+				<input type="button" onclick="buttonClick()" class="btn btn-primary btn-address" id="incr" value="+">
+			</div>
+			</div>
+			</div>
+
+          	</div>
+      <div class="carousel-caption">
+      
+      </div>   
+    </div>
+    <div class="carousel-item">
+      	<div class="row">
+
+          		<div class="card col-md-4 no-shadow" style="">
+			<img class="card-img-top" src="images/Anjeer_Dry_Fruit_Roll_COMPRESSED.jpg" class="img-responsive" alt="Card image">
+			<div class="card-body">
+			
+			<p class="card-text fb">Kaju Gujjaya</p>
+			<div class="form-inline">
+				<input type="button" onclick="buttonClickdec()" class="btn btn-primary btn-address" value="-" id="cartinputdec">
+				<input type="text" value="1" id="cartinput">				
+				<input type="button" onclick="buttonClick()" class="btn btn-primary btn-address" id="incr" value="+">
+			</div>
+
+			</div>
+			</div>
+			<div class="card col-md-4 no-shadow" style="">
+			<img class="card-img-top" src="images/akaash-namkin.jpg" class="img-responsive" alt="Card image">
+			<div class="card-body">
+			
+			<p class="card-text fb">Kaju Apple</p>
+			<div class="form-inline">
+				<input type="button" onclick="buttonClickdec()" class="btn btn-primary btn-address" value="-" id="cartinputdec">
+				<input type="text" value="1" id="cartinput">				
+				<input type="button" onclick="buttonClick()" class="btn btn-primary btn-address" id="incr" value="+">
+			</div>
+			</div>
+			</div>
+			<div class="card col-md-4 no-shadow" style="">
+			<img class="card-img-top" src="images/Dry_Jamoon_COMPRESSED.jpg" class="img-responsive" alt="Card image">
+			<div class="card-body">
+			
+			<p class="card-text fb">Kaju Apple</p>
+			<div class="form-inline">
+				<input type="button" onclick="buttonClickdec()" class="btn btn-primary btn-address" value="-" id="cartinputdec">
+				<input type="text" value="1" id="cartinput">				
+				<input type="button" onclick="buttonClick()" class="btn btn-primary btn-address" id="incr" value="+">
+			</div>
+			</div>
+			</div>
+
+          	</div>
+      <div class="carousel-caption">
+        
+      </div>   
+    </div>
+    <div class="carousel-item">
+      	<div class="row">
+
+          		<div class="card col-md-4 no-shadow" style="">
+			<img class="card-img-top" src="images/Anjeer_Dry_Fruit_Roll_COMPRESSED.jpg" class="img-responsive" alt="Card image">
+			<div class="card-body">
+			
+			<p class="card-text fb">Kaju Gujjaya</p>
+			<div class="form-inline">
+				<input type="button" onclick="buttonClickdec()" class="btn btn-primary btn-address" value="-" id="cartinputdec">
+				<input type="text" value="1" id="cartinput">				
+				<input type="button" onclick="buttonClick()" class="btn btn-primary btn-address" id="incr" value="+">
+			</div>
+
+			</div>
+			</div>
+			<div class="card col-md-4 no-shadow" style="">
+			<img class="card-img-top" src="images/akaash-namkin.jpg" class="img-responsive" alt="Card image">
+			<div class="card-body">
+			
+			<p class="card-text fb">Kaju Apple</p>
+			<div class="form-inline">
+				<input type="button" onclick="buttonClickdec()" class="btn btn-primary btn-address" value="-" id="cartinputdec">
+				<input type="text" value="1" id="cartinput">				
+				<input type="button" onclick="buttonClick()" class="btn btn-primary btn-address" id="incr" value="+">
+			</div>
+			</div>
+			</div>
+			<div class="card col-md-4 no-shadow" style="">
+			<img class="card-img-top" src="images/Dry_Jamoon_COMPRESSED.jpg" class="img-responsive" alt="Card image">
+			<div class="card-body">
+			
+			<p class="card-text fb">Kaju Apple</p>
+			<div class="form-inline">
+				<input type="button" onclick="buttonClickdec()" class="btn btn-primary btn-address" value="-" id="cartinputdec">
+				<input type="text" value="1" id="cartinput">				
+				<input type="button" onclick="buttonClick()" class="btn btn-primary btn-address" id="incr" value="+">
+			</div>
+			</div>
+			</div>
+
+          	</div>
+      <div class="carousel-caption">
+        
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+          	</div>          	
+			
+          	<hr>
+          	<div class="row">
+          		<div class="col-xl-6 amt-sec">
+          			<label>CartTotal <span>$1205.00</span></label><br/>
+          			<label>Tax <span>$10</span></label><br/>
+          			<label>Shipping <span>$12</span></label>
+          		</div>
+          		<div class="col-xl-6">
+          			<button class="btn btn-primary btn-address float-right">Select Address <span class="pl-5">></span></button>
+          			
+          		</div>
+          		
+          	</div>
+                    
+          </div>
+          <div class="tab-pane fade p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
+            <h5 class="card-title">Tab Card Two</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+          </div>
+          <div class="tab-pane fade p-3" id="three" role="tabpanel" aria-labelledby="three-tab">
+            <h5 class="card-title">Tab Card Three</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+          </div>
+              <div class="tab-pane fade p-3" id="four" role="tabpanel" aria-labelledby="four-tab">
+            <h5 class="card-title">Tab Card Three</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	$( document ).ready(function() {
+	$("#incr").click(function(){
+    num = parseInt($("#cartinput").text());
+    $("#cartinput").text(num+1);
+})
+	});
+
+</script>
+	<script>
+    var i = 0;
+    function buttonClick() {
+        i++;
+        document.getElementById('cartinput').value = i;
+    }
+</script>
+	<script>
+    var i = 0;
+    function buttonClickdec() {
+        i--;
+        document.getElementById('cartinput').value = i;
+    }
+</script>
